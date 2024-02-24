@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sir Fasido</title>
+<h1>Assalamualaikum warahmatullahi WR.WB</h1>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  #clock {
+    font-size: 48px;
+    margin-top: 50px;
+  }
+</style>
+</head>
+<body>
+<div id="clock"></div>
+<script>
+  function updateTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    const seconds = now.getSeconds().toString().padStart(2, '0');
+    document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  .social-links {
+    margin-top: 50px;
+  }
+  .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #333;
+  }
+</style>
+</head>
+<body>
+<div class="social-links">
+  <a href="https://www.facebook.com/fasido.rihcardo" target="_blank">Facebook</a>
+  <a href="#" target="_blank">Twitter</a>
+  <a href="https://www.instagram.com/fsidoo" target="_blank">Instagram</a>
+  <h2>sosial media aing</h2>
+</div>
+</body>
+</html>
+
+</body>
+</html>
